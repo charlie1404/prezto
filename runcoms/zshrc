@@ -3,8 +3,6 @@ export EDITOR="nvim"
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias tip: "
 export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="_"
 
-. /Users/gupta/.zprezto/z.sh
-
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -56,6 +54,7 @@ alias glg2='git log --date-order --all --graph --name-status --format="%C(green)
 alias cll='colorls -la --report --gs'
 alias cat='ccat'
 alias mux='tmuxinator'
+alias copy="tr -d '\n' | pbcopy"
 
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
 setopt HIST_EXPIRE_DUPS_FIRST    # Expire duplicate entries first when trimming history.
@@ -71,3 +70,4 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 # clear
 # neofetch
 
+. /Users/gupta/.zprezto/z.sh
