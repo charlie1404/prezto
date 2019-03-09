@@ -52,9 +52,10 @@ alias glg='git log --date-order --all --graph --format="%C(green)%h%Creset %C(ye
 alias glg2='git log --date-order --all --graph --name-status --format="%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
 
 alias cll='colorls -la --report --gs'
-alias cat='ccat'
+alias cat='bat'
 alias mux='tmuxinator'
 alias copy="tr -d '\n' | pbcopy"
+alias run="open -a 'Google Chrome Canary' --args --disable-web-security --user-data-dir='/Users/gupta/Desktop/nosecurity'"
 
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
 setopt HIST_EXPIRE_DUPS_FIRST    # Expire duplicate entries first when trimming history.
